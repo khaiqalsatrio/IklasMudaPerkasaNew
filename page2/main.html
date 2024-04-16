@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Start Content -->
+    <div class="container">
+        <h2 class="h2-content">CV Iklas Muda Perkasa
+            <div class="container-back">
+                <button onclick="goBackWithLoading()"class="back" >Home</button>
+            </div>
+        </h2>
+        <p class="p-content">Iklas Muda Perkasa (IMP) adalah Agen Resmi dibawah perusahaan MMBC tour & travel yang Bersertifikat dan berpusat di bogor dan berdedikasi untuk menyediakan jasa layanan  wisata yang tak terlupakan serta memdapatakanpengalaman yang menyenangkan bagi para pelanggan kami. Dengan komitmen menyediakan  pelayanan yang berkualitas tinggi, nyaman, aman dan selalu mengutamakan kepuasan bagi pelanggan. kami telah menjadi pilihan utama bagi mereka yang ingin berpetualang dalam menentukan  destinasi dan liburan anda yang sempurna dan menyenangkan.</p>
+
+        <h2 class="h2-tentang">Tentang Kami</h2>
+        <p class="p-tentang">Sejak didirikannya Iklas Muda Perkasa  (IMP) yang berkolaborasi dengan MMBC Tour & Travel di bogor tahun 2023, berkomitmen akan menempatkan kepuasan pelanggan sebagai prioritas utama. Kami percaya bahwa setiap perjalanan adalah sebuah cerita, dan kami berusaha untuk membuat setiap cerita perjalanan menjadi pengalaman yang berkesan. Tim kami berusaha akan bersikap profesional dan ramah dalam hal memberikan pelayanan berupa jasa, serta memiliki pengalaman dalam industri pariwisata. Kami juga siap untuk menyediakan pembimbing/Gaet yang ahli dan personal kepada setiap pelanggan..</p>
+
+        <h2 class="h2-kami">Kenapa Memilih Kami?</h2>
+        <p class="p-kami">Pengalaman & Keahlian: Tim kami terdiri dari profesional yang berpengalaman dan berpengetahuan luas tentang industri pariwisata.
+        Kepuasan Pelanggan: Kepuasan pelanggan adalah prioritas utama kami. Kami berusaha keras untuk memastikan bahwa setiap pelanggan merasa puas dengan pengalaman mereka bersama kami.
+        Fleksibilitas: Kami menyediakan beragam paket wisata yang dapat disesuaikan dengan kebutuhan dan anggaran Anda.
+        Layanan Pelanggan 24/7: Kami selalu siap membantu Anda, kapan pun Anda membutuhkan bantuan atau informasi tambahan.</p>
+
+        <h2 class="h2-paket">Paket Wisata</h2>
+        <p class="p-paket">Kami menyediakan paket wisata yang lengkap, mulai dari perjalanan petualangan yang menantang hingga liburan santai di destinasi eksotis di seluruh dunia. Dari pantai yang indah hingga pegunungan yang megah, kami memiliki semua yang Anda cari.
+        </p>
+
+        <h2 class="h2-layanan">Layanan Pelanggan 24/7</h2>
+        <p class="p-layanan">Kepuasan pelanggan adalah prioritas kami. Oleh karena itu, kami menyediakan layanan pelanggan 24/7 untuk mendukung Anda sepanjang perjalanan Anda. Tim kami siap membantu Anda dengan pertanyaan, permintaan, atau masalah apa pun yang mungkin timbul.</p>
+    </div>
+    <!-- Content End -->
+
+    <!-- Start Footer -->
+    <footer class="footer">
+        <div class="credits text-center">
+            Designed By <a href="#"> <span>CV.Iklas Muda Perkasa</span></a>
+            <br>
+            &copy; 2024 Iklas Muda Perkasa.
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- JavaScript untuk kembali dengan efek loading -->
+    <script>
+        // Fungsi untuk menangani klik pada tombol "Kembali"
+        function goBackWithLoading() {
+            // Menampilkan efek loading
+            showLoading();
+            // Mengarahkan ke halaman sebelumnya setelah delay
+            setTimeout(function() {
+                window.history.back();
+            }, 1000); // Delay 1 detik (1000 milidetik) sebelum kembali
+        }
+
+        // Fungsi untuk menampilkan efek loading
+        function showLoading() {
+            // Tambahkan elemen overlay untuk efek loading
+            const loadingOverlay = document.createElement('div');
+            loadingOverlay.classList.add('loading-overlay');
+            const spinner = document.createElement('div');
+            spinner.classList.add('spinner');
+            loadingOverlay.appendChild(spinner);
+            document.body.appendChild(loadingOverlay);
+        }
+    </script>
+</body>
+</html>

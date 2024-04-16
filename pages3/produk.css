@@ -1,0 +1,113 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling Header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.h1-header{
+    border: 1px solid whitesmoke;
+    width:330px;
+    background-color: antiquewhite;
+    color: #333;
+    border-radius: 5px;
+}
+
+.container-back{
+    display: flex;
+    float: right;
+    justify-content: center;
+}
+
+.back{
+    background-color: brown;
+    color: whitesmoke;
+    width: 70px;
+    height: 30px;
+}
+
+.back:hover{
+    color: #333;
+    background-color: silver;
+    transition: 0.2s ease-in-out;
+}
+
+/* Styling Article */
+article {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+article h2 {
+    color: #333;
+}
+
+article p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+article ul {
+    margin-bottom: 10px;
+}
+
+article li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Styling Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.credits a {
+    color: whitesmoke; /* Warna tautan */
+    text-decoration: none; /* Hilangkan garis bawah dari tautan */
+}
+
+    /* CSS untuk loading overlay */
+    .loading-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang dengan opacity 80% */
+        z-index: 9999; /* Menempatkan loading overlay di atas elemen-elemen lain */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* CSS untuk spinner */
+    .spinner {
+        border: 4px solid rgba(0, 0, 0, 0.1); /* Warna garis spinner */
+        border-left-color: blue; /* Warna garis bagian kiri spinner */
+        border-radius: 50%; /* Membuat bentuk spinner menjadi lingkaran */
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite; /* Animasi putaran spinner */
+    }
+    
+    /* Animasi putaran spinner */
+    @keyframes spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }

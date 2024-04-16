@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour and Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <!-- Start Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Tour & Travel</h1>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="pages3/produk.html" class="nav-link" id="produk-link" >Tour & travel</a></li>
+                <li><a href="https://wa.me/6281348215665" class="nav-link">Hubungi</a></li>
+                <li><a href="page2/main.html" class="nav-link" id="about-link">Tentang</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Start Content -->
+    <section id="content">
+        <div class="container-content">
+            <h3 class="h3-content">
+                Iklas Muda Perkasa <br> Tour And Travel
+            </h3>
+            <p class="p-content">
+                Petualangan tak terduga menanti di sudut-sudut yang belum pernah kita jelajahi sebelumnya Bersama Iklas Muda Perkasa Tour and Travel, <br> bukan hanya destinasi yang kita temui, tetapi juga pengalaman tak terlupakan.
+            </p>
+        </div>
+    </section>
+
+    <section id="home">
+        <div class="home" style="font-size: 25px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; ">Home<span style="color: coral; font-size: 22px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Page</span></div>
+        <div>
+            <h2 class="h2-content">Iklas Muda Perkasa Tour And Travel</h2>
+            <p class="p-content2">
+                Tempatnya para petualang sejati, Kami menyediakan pengalaman wisata yang tak terlupakan, mulai dari petualangan alam hingga liburan santai di destinasi eksotis di seluruh dunia, Temukan destinasi wisata yang paling diminati oleh seluruh penjuru dunia Mulai dari pantai yang indah hingga pegunungan yang megah, kami memiliki semua yang Anda cari, Nikmati perjalanan tanpa repot dengan paket liburan kami yang lengkap. Kami menawarkan berbagai pilihan paket liburan yang disesuaikan dengan kebutuhan dan anggaran Anda
+            </p>
+        </div>
+    </section>
+    <!-- Content End -->
+
+
+    <!-- Start Footer -->
+    <footer class="footer">
+        <div class="container-footer">
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/share/cNFfnrE4CLTonbqw/?mibextid=qi2Omg" target="_blank"><img src="assets/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://www.tiktok.com/@dery_sampit?is_from_webapp=1&sender_device=pc" target="_blank"><img src="assets/tiktok.png" alt="Tiktok"></a></li>
+                <li><a href="https://www.instagram.com/dery_shagita_sukma/" target="_blank"><img src="assets/instagram2.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+        <div class="credits text-center">
+            Designed By <a href="#"> <span>CV.Iklas Muda Perkasa</span></a>
+            <br>
+            &copy; 2024 Iklas Muda Perkasa.
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Start Script -->
+
+    <!-- Script Home -->
+    <script>
+        document.querySelector('.nav-links').addEventListener('click', function(event) {
+            if (event.target.classList.contains('nav-link')) {
+                const targetId = event.target.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+                event.preventDefault();
+            }
+        });
+    </script>
+
+    <!-- Script Tentang -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById('about-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            showLoading();
+            setTimeout(function() {
+                window.location.href = "file:///C:/Users/Asus/OneDrive/Desktop/IMP%20NEW/page2/main.html";
+            }, 1000);
+        });
+        function showLoading() {
+            const loadingOverlay = document.createElement('div');
+            loadingOverlay.classList.add('loading-overlay');
+            const spinner = document.createElement('div');
+            spinner.classList.add('spinner');
+            loadingOverlay.appendChild(spinner);
+            document.body.appendChild(loadingOverlay);
+        }
+    });
+</script>
+
+
+    <!-- Script Produk -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById('produk-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            showLoading();
+            setTimeout(function() {
+                window.location.href = "file:///C:/Users/Asus/OneDrive/Desktop/IMP%20NEW/pages3/produk.html";
+            }, 1000);
+        });
+        function showLoading() {
+            const loadingOverlay = document.createElement('div');
+            loadingOverlay.classList.add('loading-overlay');
+            const spinner = document.createElement('div');
+            spinner.classList.add('spinner');
+            loadingOverlay.appendChild(spinner);
+            document.body.appendChild(loadingOverlay);
+        }
+    });
+</script>
+    <!-- End Script -->
+
+</body>
+</html>
