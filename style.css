@@ -96,7 +96,7 @@
     font-size: 20px;
     margin: 10px;
     padding: 10px;
-    border-bottom: 4px solid #ccc;
+    border-bottom: 3px solid #ccc;
 }
 
 .h2-content{
@@ -187,33 +187,85 @@
 
 
 
-/* CSS untuk loading overlay */
-.loading-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    z-index: 9999; 
-    display: flex;
+/* CSS PRODUK */
+.produk{
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  justify-content: center;
+}
+
+/* Styling Article */
+article {
+    margin: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #4a4a4a;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: slategray;
+    color: whitesmoke;
+}
+
+article h2 {
+    color: black;
+}
+
+article p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+article ul {
+    margin-bottom: 10px;
+}
+
+article li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+/* CSS PRODUK END */
+
+
+
+/* CSS ABOUT */
+
+.about{
     justify-content: center;
-    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    margin: 7px;
+    padding: 7px;
+    border-top: 3px solid #ccc;
 }
 
-/* CSS untuk spinner */
-.spinner {
-    border: 4px solid rgba(0, 0, 0, 0.1);
-    border-left-color: blue;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite;
+.h2-kami{
+    padding: 5px;
+    font-size: 20px;
 }
 
-/* Animasi putaran spinner */
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
+.h2-layanan{
+    padding: 5px;
+    font-size: 20px;
 }
+
+.h2-paket{
+    padding: 5px;
+    font-size: 20px;
+}
+
+.p-kami{
+    padding: 5px;
+    margin: 5px;
+}
+
+.p-layanan{
+    padding: 5px;
+    margin: 5px;
+}
+
+.p-paket{
+    padding: 5px;
+    margin: 5px;
+}
+/* CSS ABOUT END */
